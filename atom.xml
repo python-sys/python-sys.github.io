@@ -6,7 +6,7 @@
   <link href="http://yunblog.host/atom.xml" rel="self"/>
   
   <link href="http://yunblog.host/"/>
-  <updated>2021-05-11T13:08:25.589Z</updated>
+  <updated>2021-05-11T13:16:34.751Z</updated>
   <id>http://yunblog.host/</id>
   
   <author>
@@ -17,11 +17,11 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>机器学习初识</title>
+    <title>机器学习模型评估</title>
     <link href="http://yunblog.host/2021/05/11/1.3%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E6%A8%A1%E5%9E%8B%E8%AF%84%E4%BC%B0/"/>
     <id>http://yunblog.host/2021/05/11/1.3%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E6%A8%A1%E5%9E%8B%E8%AF%84%E4%BC%B0/</id>
     <published>2021-05-11T13:09:01.101Z</published>
-    <updated>2021-05-11T13:08:25.589Z</updated>
+    <updated>2021-05-11T13:16:34.751Z</updated>
     
     <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h3 id="学习目标"><a href="#学习目标" class="headerlink" title="学习目标"></a>学习目标</h3><ul><li>了解机器学习中模型评估的方法</li><li>知道过拟合和欠拟合发生情况<blockquote><p>按照数据集的目标值的不同可以把分类模型评估和回归模型评估</p></blockquote></li></ul><h4 id="分类模型评估"><a href="#分类模型评估" class="headerlink" title="分类模型评估"></a>分类模型评估</h4><h4 id="回归模型评估"><a href="#回归模型评估" class="headerlink" title="回归模型评估"></a>回归模型评估</h4><ul><li>均方根误差(RMSE)</li><li>其他指标</li><li><ul><li>相对平方误差，平均绝对误差，相对决对误差<h4 id="拟合"><a href="#拟合" class="headerlink" title="拟合"></a>拟合</h4><h6 id="欠拟合"><a href="#欠拟合" class="headerlink" title="欠拟合"></a>欠拟合</h6></li></ul></li><li>模型学习的太过粗糙，连训练集的样本数据特征关系都没有学出来<h6 id="过拟合"><a href="#过拟合" class="headerlink" title="过拟合"></a>过拟合</h6></li><li>所建立的机器学习模型或者深度学习模型在训练中表现得过于优越，导致测试数据集中表现不佳</li></ul>]]></content>
     
