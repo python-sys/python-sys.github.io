@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>GHL&#39;s blog</title>
+  
+  
+  <link href="http://yunblog.host/atom.xml" rel="self"/>
+  
+  <link href="http://yunblog.host/"/>
+  <updated>2021-05-11T08:37:21.553Z</updated>
+  <id>http://yunblog.host/</id>
+  
+  <author>
+    <name>GHL</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>部署添加nignx反向代理</title>
+    <link href="http://yunblog.host/2021/05/11/%E9%83%A8%E7%BD%B2%E6%B7%BB%E5%8A%A0nignx%E5%8F%8D%E5%90%91%E4%BB%A3%E7%90%86/"/>
+    <id>http://yunblog.host/2021/05/11/%E9%83%A8%E7%BD%B2%E6%B7%BB%E5%8A%A0nignx%E5%8F%8D%E5%90%91%E4%BB%A3%E7%90%86/</id>
+    <published>2021-05-11T08:19:44.000Z</published>
+    <updated>2021-05-11T08:37:21.553Z</updated>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h4 id="Nginx"><a href="#Nginx" class="headerlink" title="Nginx"></a>Nginx</h4><blockquote><p>Nginx(“engine x”)是一款是由俄罗斯的程序设计师Igor Sysoev所开发高性能的 Web和 反向代理 服务器，也是一个 IMAP/POP3/SMTP 代理服务器。<br>在高连接并发的情况下，Nginx是Apache服务器不错的替代品。</p></blockquote><ul><li>nginx 配置转发请求给uwsgi<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">location / &#123;</span><br><span class="line">    include uwsgi_params;</span><br><span class="line">    uwsgi_pass uwsgi服务器的ip:port;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li><li>nginx 配置处理静态文件<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">django setting.py 中收集静态文件的路径</span><br><span class="line">static_root=收集的静态文件路径 例如：/var/www/项目文件/static</span><br></pre></td></tr></table></figure></li><li>nginx 转发请求给另外地址<blockquote><p>在location 对应的配置项中添加proxy_pass 转发的服务器地址。如当用户访问127.0.0.1时，在nginx中配置把这个请求转发给172.16.179.131：80服务器</p></blockquote></li></ul>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;\assets\css\APlayer.min.css&quot;&gt;&lt;script src=&quot;\assets\js\APlayer.min.js&quot; cla</summary>
+      
+    
+    
+    
+    
+    <category term="python,web服务器" scheme="http://yunblog.host/tags/python-web%E6%9C%8D%E5%8A%A1%E5%99%A8/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>部署uwsgi作为web服务器</title>
+    <link href="http://yunblog.host/2021/05/11/%E9%83%A8%E7%BD%B2uwsgi%E4%BD%9C%E4%B8%BAweb%20%E6%9C%8D%E5%8A%A1%E5%99%A8/"/>
+    <id>http://yunblog.host/2021/05/11/%E9%83%A8%E7%BD%B2uwsgi%E4%BD%9C%E4%B8%BAweb%20%E6%9C%8D%E5%8A%A1%E5%99%A8/</id>
+    <published>2021-05-11T08:06:48.292Z</published>
+    <updated>2021-05-11T08:35:16.635Z</updated>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h3 id="项目部署"><a href="#项目部署" class="headerlink" title="项目部署"></a>项目部署</h3><h6 id="uwsgi"><a href="#uwsgi" class="headerlink" title="uwsgi"></a>uwsgi</h6><ul><li>遵循wsgi协议的web服务器</li><li>安装<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pip install uwsgi</span><br></pre></td></tr></table></figure></li><li>配置<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line">DEBUG=Flase</span><br><span class="line">ALLOWED_HOST=[<span class="string">&#x27;*&#x27;</span>]</span><br><span class="line"></span><br><span class="line">[uwsgi]</span><br><span class="line"><span class="comment"># 使用nginx连接时使用</span></span><br><span class="line"><span class="comment"># socket = 127.0.0.1:8080</span></span><br><span class="line"><span class="comment"># 直接做服务器使用</span></span><br><span class="line">http=<span class="number">127.0</span><span class="number">.0</span><span class="number">.1</span>:<span class="number">8080</span></span><br><span class="line"><span class="comment"># 项目目录</span></span><br><span class="line">chdir = ...</span><br><span class="line"><span class="comment"># 项目中wsgi.py 文件的目录，相对于项目目录</span></span><br><span class="line">wsgi-file=.,/wsgi.py</span><br><span class="line"><span class="comment"># 指定启动（工作的）进程数</span></span><br><span class="line">processes=<span class="number">4</span></span><br><span class="line"><span class="comment"># 指定工作进程中的线程数</span></span><br><span class="line">threads=<span class="number">2</span></span><br><span class="line"><span class="comment"># 主进程</span></span><br><span class="line">master = true</span><br><span class="line"><span class="comment"># 保存启动之后主进程的pid </span></span><br><span class="line">pidfile =uwsg.pid</span><br><span class="line"><span class="comment"># 设置uwsgi后台运行，log保存日志信息</span></span><br><span class="line">pidfile=uwsgi.log</span><br><span class="line"><span class="comment"># 设置虚拟环境的路径 </span></span><br><span class="line">virtualenv=...</span><br></pre></td></tr></table></figure></li><li>ussgi的启动和停止<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">启动：uwsgi --ini 配置文件路径 例如：uwsgi --ini uwsgi.ini</span><br><span class="line">停止: uwsgi --stop uwsgi.pid 路经 例如:uwsgi --stop uwsgi.pid</span><br><span class="line"></span><br><span class="line"><span class="comment"># 查看</span></span><br><span class="line">ps aux | grep uwsgi</span><br></pre></td></tr></table></figure>启动后需要修改配置nginx </li></ul>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;\assets\css\APlayer.min.css&quot;&gt;&lt;script src=&quot;\assets\js\APlayer.min.js&quot; cla</summary>
+      
+    
+    
+    
+    
+    <category term="python" scheme="http://yunblog.host/tags/python/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Hello World</title>
+    <link href="http://yunblog.host/2021/05/10/hello-world/"/>
+    <id>http://yunblog.host/2021/05/10/hello-world/</id>
+    <published>2021-05-10T12:04:29.334Z</published>
+    <updated>2021-05-10T12:04:29.334Z</updated>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;\assets\css\APlayer.min.css&quot;&gt;&lt;script src=&quot;\assets\js\APlayer.min.js&quot; cla</summary>
+      
+    
+    
+    
+    
+  </entry>
+  
+</feed>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  
+  <url>
+    <loc>http://yunblog.host/2021/05/11/%E9%83%A8%E7%BD%B2%E6%B7%BB%E5%8A%A0nignx%E5%8F%8D%E5%90%91%E4%BB%A3%E7%90%86/</loc>
+    
+    <lastmod>2021-05-11</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yunblog.host/2021/05/11/%E9%83%A8%E7%BD%B2uwsgi%E4%BD%9C%E4%B8%BAweb%20%E6%9C%8D%E5%8A%A1%E5%99%A8/</loc>
+    
+    <lastmod>2021-05-11</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yunblog.host/categories/index.html</loc>
+    
+    <lastmod>2021-05-11</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yunblog.host/tags/index.html</loc>
+    
+    <lastmod>2021-05-11</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yunblog.host/2021/05/10/hello-world/</loc>
+    
+    <lastmod>2021-05-10</lastmod>
+    
+  </url>
+  
+
+  <url>
+    <loc>http://yunblog.host/</loc>
+    <lastmod>2021-05-11</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1.0</priority>
+  </url>
+
+  
+  <url>
+    <loc>http://yunblog.host/tags/python/</loc>
+    <lastmod>2021-05-11</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://yunblog.host/tags/python-web%E6%9C%8D%E5%8A%A1%E5%99%A8/</loc>
+    <lastmod>2021-05-11</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+
+  
+</urlset>
