@@ -2,6 +2,55 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://yunblog.host/2021/05/13/%E5%AD%A6%E4%B9%A0%E8%AE%A1%E5%88%92/</loc>
+    
+    <lastmod>2021-05-13</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yunblog.host/2021/05/13/%E5%85%B3%E4%BA%8E%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E7%9A%84%E6%80%9D%E8%80%83/</loc>
+    
+    <lastmod>2021-05-13</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yunblog.host/2021/05/11/02.%E9%83%A8%E7%BD%B2%E6%B7%BB%E5%8A%A0nignx%E5%8F%8D%E5%90%91%E4%BB%A3%E7%90%86/</loc>
+    
+    <lastmod>2021-05-13</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yunblog.host/2021/05/13/02-flask%E5%8D%9A%E5%AE%A2%E5%B9%B3%E5%8F%B0%E6%95%B0%E6%8D%AE%E5%BA%93%E7%AD%89%E6%A8%A1%E5%9D%97%E5%AF%BC%E5%85%A5/</loc>
+    
+    <lastmod>2021-05-13</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yunblog.host/2021/05/13/01-%E4%BB%8E%E9%9B%B6%E5%BC%80%E5%A7%8B%E7%94%A8flask%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%E5%B9%B3%E5%8F%B0/</loc>
+    
+    <lastmod>2021-05-13</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yunblog.host/2021/05/11/01.%E9%83%A8%E7%BD%B2uwsgi%E4%BD%9C%E4%B8%BAweb%20%E6%9C%8D%E5%8A%A1%E5%99%A8/</loc>
+    
+    <lastmod>2021-05-13</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yunblog.host/2021/05/11/1.1%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/</loc>
+    
+    <lastmod>2021-05-13</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://yunblog.host/music/index.html</loc>
     
     <lastmod>2021-05-13</lastmod>
@@ -12,13 +61,6 @@
     <loc>http://yunblog.host/movies/index.html</loc>
     
     <lastmod>2021-05-13</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://yunblog.host/2021/05/11/1.1%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/</loc>
-    
-    <lastmod>2021-05-12</lastmod>
     
   </url>
   
@@ -58,21 +100,7 @@
   </url>
   
   <url>
-    <loc>http://yunblog.host/2021/05/10/hello-world/</loc>
-    
-    <lastmod>2021-05-11</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://yunblog.host/2021/05/11/%E9%83%A8%E7%BD%B2%E6%B7%BB%E5%8A%A0nignx%E5%8F%8D%E5%90%91%E4%BB%A3%E7%90%86/</loc>
-    
-    <lastmod>2021-05-11</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://yunblog.host/2021/05/11/%E9%83%A8%E7%BD%B2uwsgi%E4%BD%9C%E4%B8%BAweb%20%E6%9C%8D%E5%8A%A1%E5%99%A8/</loc>
+    <loc>http://yunblog.host/2021/05/13/hello-world/</loc>
     
     <lastmod>2021-05-11</lastmod>
     
@@ -102,13 +130,6 @@
 
   
   <url>
-    <loc>http://yunblog.host/tags/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/</loc>
-    <lastmod>2021-05-13</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>http://yunblog.host/tags/python/</loc>
     <lastmod>2021-05-13</lastmod>
     <changefreq>daily</changefreq>
@@ -116,7 +137,42 @@
   </url>
   
   <url>
-    <loc>http://yunblog.host/tags/python-web%E6%9C%8D%E5%8A%A1%E5%99%A8/</loc>
+    <loc>http://yunblog.host/tags/flask/</loc>
+    <lastmod>2021-05-13</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://yunblog.host/tags/web-%E6%9C%8D%E5%8A%A1%E5%99%A8/</loc>
+    <lastmod>2021-05-13</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://yunblog.host/tags/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/</loc>
+    <lastmod>2021-05-13</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://yunblog.host/tags/web%E6%9C%8D%E5%8A%A1%E5%99%A8/</loc>
+    <lastmod>2021-05-13</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://yunblog.host/tags/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/</loc>
+    <lastmod>2021-05-13</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://yunblog.host/tags/%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90%E4%B8%8E%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD/</loc>
     <lastmod>2021-05-13</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -125,7 +181,35 @@
 
   
   <url>
+    <loc>http://yunblog.host/categories/flask/</loc>
+    <lastmod>2021-05-13</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://yunblog.host/categories/%E6%9C%8D%E5%8A%A1%E5%99%A8%E4%B8%AD%E9%97%B4%E4%BB%B6/</loc>
+    <lastmod>2021-05-13</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>http://yunblog.host/categories/python%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/</loc>
+    <lastmod>2021-05-13</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://yunblog.host/categories/%E9%9A%8F%E7%AC%94/</loc>
+    <lastmod>2021-05-13</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://yunblog.host/categories/%E5%AD%A6%E4%B9%A0%E8%AE%A1%E5%88%92/</loc>
     <lastmod>2021-05-13</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
